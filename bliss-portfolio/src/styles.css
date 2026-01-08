@@ -1,0 +1,97 @@
+/* App.css */
+
+/* Page container */
+.page {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header / Topbar */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #f8f8f8;
+}
+
+.brand {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav .nav-link {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #111;
+  font-size: 16px;
+}
+
+/* Hero section */
+.tagline {
+  white-space: nowrap;
+}
+.hero-text {
+  max-width: 100%;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  padding: 80px 60px;
+  gap: 40px;
+}
+
+/* Left side intro */
+.hero-left .intro {
+  font-size: 32px; /* smaller */
+  font-weight: 400;
+  line-height: 1.2;
+  color: #111;
+}
+
+.hero-left .serif {
+  font-family: "Georgia", serif;
+  font-size: 36px; /* smaller */
+  font-style: italic;
+}
+
+/* Right side description */
+.hero-right .description {
+  font-size: 16px; /* smaller */
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.projects-link {
+  text-decoration: none;
+  color: #0077ff;
+  font-weight: bold;
+}
+
+/* Responsive: smaller screens */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .hero-left .intro {
+    font-size: 24px;
+  }
+
+  .hero-left .serif {
+    font-size: 28px;
+  }
+
+  .hero-right .description {
+    font-size: 14px;
+  }
+
+  .nav .nav-link {
+    font-size: 14px;
+    margin-left: 15px;
+  }
+}

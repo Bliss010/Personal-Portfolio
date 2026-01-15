@@ -1,9 +1,5 @@
-"# Portfolio" 
-"# Portfolio" 
-"# P_Bliss" 
-"# P_Bliss" 
-"# Bliss-P" 
-"# Bliss-P" 
-"# Personal-Portfolio" 
-"# Personal-Portfolio" 
-# Personal-Portfolio
+🛠️ Tech Stack  
+HTML • CSS • JavaScript  
+
+🚀 Highlights  
+Fast • Simple • Mobile-Friendly

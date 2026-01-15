@@ -9,6 +9,7 @@ import img4 from "./assets/gallery/img4.jpg";
 import img5 from "./assets/gallery/img5.jpg";
 import img6 from "./assets/gallery/img6.jpg";
 import img7 from "./assets/gallery/img7.jpg";
+import img8 from "./assets/gallery/img8.jpg";
 import "./styles.css";
 import project1 from "./assets/projects/safeway.jpg";
 import project2 from "./assets/projects/urjashakti.jpg";
@@ -22,7 +23,7 @@ export default function App() {
 
   const navItems = [
     "Home",
-    "About",
+    "About & Achievements",
     "Expertise",
     "Research",
     "Projects",
@@ -30,13 +31,13 @@ export default function App() {
   ];
 
   return (
-    <div style={{ fontFamily: '"Bodoni MT Condensed", serif' }}>
+    <div style={{ fontFamily: '"Cambria", serif' }}>
       {/* ================= HEADER ================= */}
       <header style={{ textAlign: "center", padding: "40px 0 20px" }}>
         <h1 style={{ fontSize: "36px", fontWeight: 400, margin: 0 }}>
           BLISS MACHADO
         </h1>
-        <p style={{ fontSize: "14px", color: "#777", marginTop: "6px" }}>
+        <p style={{ fontSize: "14px", color: "#484757ff", marginTop: "6px" }}>
           M.S. | Urban Data Scientist
         </p>
       </header>
@@ -44,7 +45,7 @@ export default function App() {
       {/* ================= GREY NAV BAR ================= */}
       <nav
         style={{
-          backgroundColor: "#b3b3b3",
+          backgroundColor: "#949393ff",
           display: "flex",
           justifyContent: "center",
           gap: "22px",
@@ -75,7 +76,7 @@ export default function App() {
         alt="Header"
         style={{
           width: "100%",
-          height: "130px",
+          height: "100px",
           objectFit: "cover",
           display: "block",
         }}
@@ -117,10 +118,10 @@ export default function App() {
               marginTop: "18px",
             }}
           >
-            I am also a co-founder of <strong>SafeWay Innovations</strong>, where
+            I am also the co-founder of <strong>SafeWay Innovations</strong>, where
             I build impactful, technology-enabled solutions. I have co-authored
             research papers published in IEEE and Springer Nature, presented at
-            ICPC2T 2025 and ICAER at IIT Bombay.
+            ICPC2T 2025 and ICAER at IIT Bombay. My skillset includes geospatial analysis, data science, and machine learning using Python, with hands-on experience in GIS-driven spatial analytics, satellite imagery analysis, CNN-based segmentation, and data-driven decision systems for sustainability, healthcare, and urban applications.
           </p>
 
           <p
@@ -131,110 +132,130 @@ export default function App() {
               marginTop: "18px",
             }}
           >
-            Beyond technology and research, I enjoy design and visual thinking,
-            working with tools like Blender and Figma to translate ideas into
-            meaningful digital experiences.
+            I possess strong leadership, teamwork, and communication skills, built through organizing large-scale hackathons, founding a startup, and collaborating on research publications. I have also worked extensively on real-world case studies at the intersection of healthcare, AI, and public systems.
           </p>
         </section>
       )}
 
-      {/* ================= ABOUT ================= */}
-      {activeLink === "About" && (
-        <section
+      {/* ================= ABOUT & ACHIEVEMENTS ================= */}
+{activeLink === "About & Achievements" && (
+  <section
+    style={{
+      maxWidth: "900px",
+      margin: "50px auto",
+      padding: "0 20px",
+    }}
+  >
+    <h2 style={{ textAlign: "center", fontWeight: 400 }}>
+      About Me
+    </h2>
+
+    <p
+      style={{
+        fontSize: "15px",
+        color: "#555",
+        lineHeight: "1.8",
+        marginTop: "25px",
+        textAlign: "justify",
+        textJustify: "inter-word",
+      }}
+    >
+      Born and raised in <strong>Vasai, Mumbai</strong>, I have developed a
+      strong curiosity for understanding how technology, design, and systems
+      intersect to shape the modern world. I love watching <strong>Vox</strong> and <strong>Big Think</strong>,
+      which has influenced my interest in research-driven innovation and
+      data story-telling. I am passionate about learning different languages and currently learning Spanish. I actively volunteered in personality development program, where I was not only an attendee but also took on the role of a peer instructor, mentoring and teaching fellow students on topics such as communication skills, confidence building, and professional etiquette.
+    </p>
+
+    <p
+      style={{
+        fontSize: "15px",
+        color: "#555",
+        lineHeight: "1.8",
+        marginTop: "18px",
+        textAlign: "justify",
+        textJustify: "inter-word",
+      }}
+    >
+      Beyond academics, I enjoy <strong>badminton, volleyball and</strong> and{" "}
+      <strong>chess</strong>.
+      I also enjoy translating abstract ideas into visual
+      experiences using <strong>Blender</strong> and <strong>Figma</strong>.
+    </p>
+
+    {/* ================= ACHIEVEMENTS ================= */}
+    <h3
+      style={{
+        textAlign: "center",
+        fontWeight: 400,
+        letterSpacing: "1px",
+        marginTop: "45px",
+        marginBottom: "25px",
+        color: "#333",
+      }}
+    >
+      ACHIEVEMENTS
+    </h3>
+
+    <div
+      style={{
+        columnCount: 3,
+        columnGap: "18px",
+      }}
+    >
+      {[
+        { img: img1, text: "Profile photo" },
+        { img: img2, text: "Smart India Hackathon 2025 Finalist organized by Ministry of Innovation Cell and All India Council of Technical Education.Built a solution to tackle Rain Water Harvesting and Artificial Recharge, a problem statement given by Ministry of Jal Shakti, India." },
+        { img: img3, text: "Innovation, Development, Entrepreneurship Bootcamp First Runner Up '24. Pitched ideas to Former ISRO Scientist, AICTE Startup Fellow, AICTE." },
+        { img: img4, text: "Ministry of Innovation Cell alumnus and Smart India Hackathon Winner '24. Built an innovative solution on solar aggregator platform using Geospatial Analysis, Data Science, ML and Full Stack Development." },
+        { img: img5, text: "Startup & innovation showcase (IDE Bootcamp First Runner Up.)" },
+        { img: img6, text: "Organised International level hackathon, Bit N Build and a Start up Pitch Competition being a part of Google Developer Student Clubs' as a creatives Co-Lead." },
+        { img: img7, text: "SIH '24 with my team SafeWay Innovations" },
+        { img: img8, text: "Other Achievements: Winner in DSA Competition by IEEE-CRCE, First runner up in Badminton and Chess in CRCE, 4th rank in Case Study Competition in Delhi University, Finalist in Ace the Case Competition by IIT Bombay, English and Marathi speech competition winner in Notre Dame School,  " },
+      ].map((item, index) => (
+        <div
+          key={index}
           style={{
-            maxWidth: "900px",
-            margin: "50px auto",
-            padding: "0 20px",
+            breakInside: "avoid",
+            marginBottom: "22px",
           }}
         >
-          <h2 style={{ textAlign: "center", fontWeight: 400 }}>About Me</h2>
+          <img
+            src={item.img}
+            alt={`Achievement ${index + 1}`}
+            style={{
+              width: "100%",
+              borderRadius: "6px",
+              transition: "transform 0.3s ease, box-shadow 0.3s ease",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = "scale(1.03)";
+              e.currentTarget.style.boxShadow =
+                "0 10px 25px rgba(0,0,0,0.15)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = "scale(1)";
+              e.currentTarget.style.boxShadow = "none";
+            }}
+          />
 
           <p
             style={{
-              fontSize: "15px",
+              fontSize: "13px",
               color: "#555",
-              lineHeight: "1.8",
-              marginTop: "25px",
-              textAlign: "justify",
-              textJustify: "inter-word",
-              hyphens: "auto",
-            }}
-          >
-            Born and raised in <strong>Vasai, Mumbai</strong>, I have developed a
-            strong curiosity for understanding how technology, design, and systems
-            intersect to shape the modern world. I actively engage with
-            analytical and thought-provoking platforms such as <strong>Vox</strong>{" "}
-            and <strong>Big Think</strong>, which have influenced my interest in
-            research-driven innovation and large-scale problem solving.
-          </p>
-
-          <p
-            style={{
-              fontSize: "15px",
-              color: "#555",
-              lineHeight: "1.8",
-              marginTop: "18px",
-              textAlign: "justify",
-              textJustify: "inter-word",
-              hyphens: "auto",
-            }}
-          >
-            Beyond academics, I maintain a strong affinity for sports, particularly{" "}
-            <strong>badminton</strong> and <strong>chess</strong> which have
-            sharpened my strategic thinking, discipline, and focus. I also possess
-            a keen eye for design and enjoy translating abstract ideas into
-            meaningful visual experiences using tools such as <strong>Blender</strong>{" "}
-            for 3D modeling and <strong>Figma</strong> for building intuitive
-            digital prototypes.
-          </p>
-
-          {/* ================= GALLERY ================= */}
-          <h3
-            style={{
+              marginTop: "8px",
               textAlign: "center",
-              fontWeight: 400,
-              letterSpacing: "1px",
-              marginTop: "45px",
-              marginBottom: "25px",
-              color: "#333",
+              lineHeight: "1.4",
             }}
           >
-            Gallery
-          </h3>
+            {item.text}
+          </p>
+        </div>
+      ))}
+    </div>
+  </section>
+)}
 
-          <div
-            className="masonry"
-            style={{
-              columnCount: 3,
-              columnGap: "18px",
-            }}
-          >
-            {[img1, img2, img3, img4, img5, img6, img7].map((img, index) => (
-              <img
-                key={index}
-                src={img}
-                alt={`Gallery ${index + 1}`}
-                style={{
-                  width: "100%",
-                  marginBottom: "18px",
-                  borderRadius: "6px",
-                  breakInside: "avoid",
-                  cursor: "pointer",
-                  transition: "transform 0.4s ease, box-shadow 0.4s ease",
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = "scale(1.03)";
-                  e.currentTarget.style.boxShadow = "0 10px 25px rgba(0,0,0,0.15)";
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = "scale(1)";
-                  e.currentTarget.style.boxShadow = "none";
-                }}
-              />
-            ))}
-          </div>
-        </section>
-      )}
 
       {/* ================= EXPERTISE ================= */}
       {activeLink === "Expertise" && (
@@ -279,16 +300,16 @@ export default function App() {
         fontSize: "1.1rem",
         lineHeight: "1.6",
         fontWeight: 400,
-        color: "#888",
+        color: "#3c3b3bff",
       }}
     >
       <li style={{ color: "#000" }}>
         <span style={{ color: "#000" }}>
           <strong style={{ fontWeight: 600 }}>
-            Bhushan S. Naik, Tanish V. Khot, Bliss D. Machado, and R. B. Raut
+            Bliss D. Machado
           </strong>
         </span>
-        <span style={{ color: "#888" }}>
+        <span style={{ color: "#3e3d3dff" }}>
           , "IoT-Enabled Drowsiness Detection Systems for Enhanced Road Safety
           Across Diverse Vehicle Types," Fr. Conceicao Rodrigues College of
           Engineering.
@@ -306,10 +327,10 @@ export default function App() {
       <li style={{ color: "#000" }}>
         <span style={{ color: "#000" }}>
           <strong style={{ fontWeight: 600 }}>
-            Bhushan S. Naik, Bliss D. Machado, Tanish V. Khot
+            Bliss D. Machado
           </strong>
         </span>
-        <span style={{ color: "#888" }}>
+        <span style={{ color: "#494848ff" }}>
           , "Urja Shakti: A Digital Platform for Rooftop Solar Aggregation Using
           Satellite and Geospatial Intelligence," Department of Electronics and
           Computer Science, Fr. Conceicao Rodrigues College of Engineering, Mumbai,
@@ -388,7 +409,7 @@ export default function App() {
           title: "IoT-Enabled Drowsiness Detection Systems for Enhanced Road Safety Across Diverse Vehicle Types",
           desc: "Developed a driver drowsiness detection project featuring prototype, wearable, and webcam-based systems, and contributed by building the supporting mobile app for real-time monitoring, alerts, and live location sharing to enhance road safety.",
           img: project6,
-          link: "https://ieeexplore.ieee.org",
+          link: "https://ieeexplore.ieee.org/abstract/document/10958589",
         },
         {
   title: "Personal Porfolio",
@@ -469,7 +490,7 @@ export default function App() {
       {/* ================= FOOTER ================= */}
       <footer
         style={{
-          backgroundColor: "#1c1c1c",
+          backgroundColor: "#343434ff",
           color: "#fff",
           padding: "50px 8%",
           marginTop: "40px",
@@ -529,7 +550,7 @@ export default function App() {
         style={{
           textAlign: "center",
           fontSize: "12px",
-          color: "#777",
+          color: "#585a58ff",
           margin: "12px 0",
         }}
       >
